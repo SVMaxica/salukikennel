@@ -47,7 +47,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder p-1 md:rounded-none' : ''}`
+            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder md:border-almond p-1 md:rounded-none' : ''}`
           }
         >
           <img src={homeIcon} alt="Home" className="h-6 w-6 md:hidden" />
@@ -56,7 +56,7 @@ const Navbar = () => {
         <NavLink
           to="/puppies"
           className={({ isActive }) =>
-            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder p-1 md:rounded-none' : ''}`
+            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder md:border-almond p-1 md:rounded-none' : ''}`
           }
         >
           <img src={puppiesIcon} alt="Puppies" className="h-6 w-6 md:hidden" />
@@ -65,7 +65,7 @@ const Navbar = () => {
         <NavLink
           to="/dogs"
           className={({ isActive }) =>
-            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder p-1 md:rounded-none' : ''}`
+            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder md:border-almond p-1 md:rounded-none' : ''}`
           }
         >
           <img src={dogsIcon} alt="Dogs" className="h-6 w-6 md:hidden" />
@@ -74,7 +74,7 @@ const Navbar = () => {
         <NavLink
           to="/posts"
           className={({ isActive }) =>
-            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder p-1 md:rounded-none' : ''}`
+            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder md:border-almond p-1 md:rounded-none' : ''}`
           }
         >
           <img src={postsIcon} alt="Posts" className="h-6 w-6 md:hidden" />
@@ -83,7 +83,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder p-1 md:rounded-none' : ''}`
+            `flex flex-col items-center md:flex-row ${isActive ? 'border-t-4 md:border-t-0 md:border-b-2 border-wild-blue-yonder md:border-almond p-1 md:rounded-none' : ''}`
           }
         >
           <img src={contactIcon} alt="Contact" className="h-6 w-6 md:hidden" />

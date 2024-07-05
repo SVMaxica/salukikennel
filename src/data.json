@@ -1,0 +1,40 @@
+{
+  "testimonials": [
+    {
+      "id":1,
+      "image": "sofia.jpg",
+      "name": "Sofia",
+      "message": "The best breeder ever! So suportive and I feel that i can ask anything at anytime❤️"
+    },
+    {
+      "id":2,
+      "image": "eddie.jpg",
+      "name": "Eddie",
+      "message": "Great dogs with awesome mentality they are just so coolcool"
+    },
+    {
+      "id":3,
+      "image": "lisa.jpg",
+      "name": "Lisa",
+      "message": "I have 3 dogs from this breeder, Vento Veloce will always be my number one breeder!"
+    },
+    {
+      "id":4,
+      "image": "bengt.jpg",
+      "name": "bengt",
+      "message": "Their dogs is both super handsome showstoppers and super nice working/family dogs"
+    },
+    {
+      "id":5,
+      "image": "eva.jpg",
+      "name": "Eva",
+      "message": ""
+    },
+    {
+      "id":6,
+      "image": "shirin.jpg",
+      "name": "Shirin",
+      "message": "All my dogs from Vento Veloce has been outstanding!"
+    }
+  ]
+}

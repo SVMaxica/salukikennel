@@ -4,9 +4,9 @@ const Home = () => {
   return (
   <div className="home-container flex flex-col md:flex-row items-center justify-between p-4 md:p-8">
       <div className="text-section p-4 md:w-1/2">
-        {/* <h5 className="text-sm font-inter mb-2">Welcome to kennel</h5> */}
-        <h1 className="text-4xl text-liberty font-lora pb-4 mb-4 mt-4">Welcome</h1>
-        <p className="text-base font-inter text-left mt-4 mb-4">
+        <h4 className="text-ms font-lora text-taupe-gray mb-2 pt-4">Welcome to kennel</h4>
+        <h1 className="text-4xl md:text-5xl text-liberty font-lora pb-2 mb-4 mt-4">Vento Veloce</h1>
+        <p className="text-base font-inter text-taupe-gray text-left mt-4 mb-4">
           I'm Lovisa and together with my friend Stina we breed salukis and whippets.
           Our main focus is to breed Healthy and beautiful dogs with great mentality.
         </p>
