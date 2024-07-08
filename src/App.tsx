@@ -14,7 +14,7 @@ function App() {
       <div className="text-center">
         <Navbar />
         <Hero />
-        <Routes> {/* Switch is replaced by Routes in v6 */}
+        <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/dogs" element={<Dogs />} />
           <Route path="/puppies" element={<Puppies />} />

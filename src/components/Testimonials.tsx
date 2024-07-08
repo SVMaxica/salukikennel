@@ -21,7 +21,7 @@ const Testimonials = () => {
   return (
     <div className="w-full bg-platinum p-4 mt-8">
       <h2 className="text-2xl font-lora text-liberty text-center mb-8 mt-4">Testimonials</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pb-4">
         {testimonials.map((testimonial) => {
           // Dynamisk import av bild
           const imageSrc = new URL(`../assets/images/${testimonial.image}`, import.meta.url).href;
@@ -34,8 +34,8 @@ const Testimonials = () => {
                   className="w-16 h-16 rounded-full"
                 />
                 <div>
-                  <p className="pl-2 text-sm text-charcoal">{testimonial.message}</p>
-                  <p className=" text-right font-lora text-sm text-gray-600">- {testimonial.name}</p>
+                  <p className="pl-2 text-sm text-taupe-gray">{testimonial.message}</p>
+                  <p className=" text-right font-lora text-sm text-liberty">- {testimonial.name}</p>
                 </div>
               </div>
             </div>
