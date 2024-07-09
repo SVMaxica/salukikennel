@@ -5,6 +5,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape':{'raw': '(orientation: landscape)'},
+      },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'], // Används för sans-serif text.
         'lora': ['Lora', 'serif'] // Används för serif text.
