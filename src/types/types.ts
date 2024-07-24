@@ -6,7 +6,7 @@ export interface Parent {
 
 export interface Puppy {
   name: string;
-  image: string;
+  image: string[];
   titles: string[];
   owners: string;
   hometown: string;

@@ -57,7 +57,7 @@
       "puppies": [
         {
           "name": "Vento Veloce Aria",
-          "image": "PuppieA.png",
+          "image": ["puppieA.png", "puppieB.png", "puppieC.png"],
           "titles": ["SE CH", "FI LCCH"],
           "owners": "Anna Svensson",
           "hometown": "Stockholm",
@@ -65,7 +65,7 @@
         },
         {
           "name": "Vento Veloce Atlas",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["DK CH", "NORD LCCH"],
           "owners": "Johan Nilsson",
           "hometown": "Gothenburg",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Vento Veloce Aurora",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["FI CH"],
           "owners": "Lena Karlsson",
           "hometown": "Helsinki",
@@ -81,7 +81,7 @@
         },
         {
           "name": "Vento Veloce Ares",
-          "image": "puppieD.png",
+          "image": ["puppieD.png"],
           "titles": ["NORD LCCH"],
           "owners": "Oskar Larsson",
           "hometown": "Oslo",
@@ -89,7 +89,7 @@
         },
         {
           "name": "Vento Veloce Ayla",
-          "image": "puppieE.png",
+          "image": ["puppieB.png"],
           "titles": ["SE CH"],
           "owners": "Maria Persson",
           "hometown": "Malmö",
@@ -116,7 +116,7 @@
       "puppies": [
         {
           "name": "Vento Veloce Bella",
-          "image": "puppieA.png",
+          "image": ["puppieA.png", "puppieB.png", "puppieC.png"],
           "titles": ["SE CH"],
           "owners": "Eva Andersson",
           "hometown": "Uppsala",
@@ -124,7 +124,7 @@
         },
         {
           "name": "Vento Veloce Bruno",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["DK CH"],
           "owners": "Erik Johansson",
           "hometown": "Copenhagen",
@@ -132,7 +132,7 @@
         },
         {
           "name": "Vento Veloce Bianca",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["FI CH"],
           "owners": "Sofia Jansson",
           "hometown": "Turku",
@@ -140,7 +140,7 @@
         },
         {
           "name": "Vento Veloce Boris",
-          "image": "puppieD.png",
+          "image": ["puppieD.png"],
           "titles": ["NORD LCCH"],
           "owners": "Nina Petersen",
           "hometown": "Aarhus",
@@ -148,7 +148,7 @@
         },
         {
           "name": "Vento Veloce Brianna",
-          "image": "puppieE.png",
+          "image": ["puppieE.jpeg"],
           "titles": ["NORD CH"],
           "owners": "Fredrik Olsson",
           "hometown": "Lund",
@@ -156,7 +156,7 @@
         },
         {
           "name": "Vento Veloce Ben",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["SE LCCH"],
           "owners": "Helena Lindberg",
           "hometown": "Umeå",
@@ -183,7 +183,7 @@
       "puppies": [
         {
           "name": "Vento Veloce Cassie",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["SE CH"],
           "owners": "Lisa Pettersson",
           "hometown": "Stockholm",
@@ -191,7 +191,7 @@
         },
         {
           "name": "Vento Veloce Carlo",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["NORD LCCH"],
           "owners": "Magnus Eriksson",
           "hometown": "Helsingborg",
@@ -199,7 +199,7 @@
         },
         {
           "name": "Vento Veloce Clara",
-          "image": "puppieA.png",
+          "image": ["puppieA.png", "puppieB.png", "puppieC.png"],
           "titles": ["FI CH"],
           "owners": "Emma Nyberg",
           "hometown": "Oulu",
@@ -207,7 +207,7 @@
         },
         {
           "name": "Vento Veloce Cosmo",
-          "image": "puppieE.png",
+          "image": ["puppieE.jpeg"],
           "titles": ["NORD LCCH"],
           "owners": "Peter Larsson",
           "hometown": "Bergen",
@@ -215,7 +215,7 @@
         },
         {
           "name": "Vento Veloce Cleo",
-          "image": "puppieD.png",
+          "image": ["puppieD.png"],
           "titles": ["SE CH"],
           "owners": "Karin Nilsson",
           "hometown": "Gothenburg",
@@ -223,7 +223,7 @@
         },
         {
           "name": "Vento Veloce Celine",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["NORD CH"],
           "owners": "Olle Johansson",
           "hometown": "Växjö",
@@ -231,7 +231,7 @@
         },
         {
           "name": "Vento Veloce Cody",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["FI LCCH"],
           "owners": "Elin Andersson",
           "hometown": "Espoo",
@@ -258,7 +258,7 @@
       "puppies": [
         {
           "name": "Vento Veloce Daisy",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["SE CH"],
           "owners": "Hanna Berg",
           "hometown": "Karlstad",
@@ -266,7 +266,7 @@
         },
         {
           "name": "Vento Veloce Duke",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["DK CH"],
           "owners": "Jonas Karlsson",
           "hometown": "Odense",
@@ -274,7 +274,7 @@
         },
         {
           "name": "Vento Veloce Donna",
-          "image": "puppieA.png",
+          "image": ["puppieA.png", "puppieB.png", "puppieC.png"],
           "titles": ["FI CH"],
           "owners": "Pia Jansson",
           "hometown": "Tampere",
@@ -282,7 +282,7 @@
         },
         {
           "name": "Vento Veloce Dexter",
-          "image": "puppieD.png",
+          "image": ["puppieD.png"],
           "titles": ["NORD LCCH"],
           "owners": "Ingrid Petersen",
           "hometown": "Stavanger",
@@ -290,7 +290,7 @@
         },
         {
           "name": "Vento Veloce Delilah",
-          "image": "puppieE.png",
+          "image": ["puppieE.jpeg"],
           "titles": ["SE CH"],
           "owners": "Tommy Persson",
           "hometown": "Lund",
@@ -317,7 +317,7 @@
       "puppies": [
         {
           "name": "Vento Veloce Edit",
-          "image": "puppieE.png",
+          "image": ["puppieE.jpeg"],
           "titles": ["SE CH"],
           "owners": "Stina Lindgren",
           "hometown": "Linköping",
@@ -325,7 +325,7 @@
         },
         {
           "name": "Vento Veloce Elsa",
-          "image": "puppieD.png",
+          "image": ["puppieD.png"],
           "titles": ["SE CH"],
           "owners": "Stina Lindgren",
           "hometown": "Linköping",
@@ -333,7 +333,7 @@
         },
         {
           "name": "Vento Veloce Eddie",
-          "image": "puppieB.png",
+          "image": ["puppieB.png"],
           "titles": ["SE CH"],
           "owners": "Stina Lindgren",
           "hometown": "Linköping",
@@ -341,7 +341,7 @@
         },
         {
           "name": "Vento Veloce Elton",
-          "image": "puppieC.png",
+          "image": ["puppieC.png"],
           "titles": ["SE CH"],
           "owners": "Stina Lindgren",
           "hometown": "Linköping",
@@ -349,7 +349,7 @@
         },
         {
           "name": "Vento Veloce Emiral",
-          "image": "puppieA.png",
+          "image": ["puppieA.png", "puppieB.png", "puppieC.png"],
           "titles": ["SE CH"],
           "owners": "Stina Lindgren",
           "hometown": "Linköping",
