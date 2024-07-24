@@ -6,6 +6,7 @@ import Puppies from './pages/Puppies';
 import Contact from './pages/Contact';
 import Posts from './pages/Posts';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/posts" element={<Posts />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -36,5 +36,326 @@
       "name": "Shirin",
       "message": "All my dogs from kennel Vento Veloce has been outstanding! for both show and family.🏆❤️"
     }
-  ]
-}
+  ],
+  "litters": [
+    {
+      "litter": "A",
+      "image": "litterA.png",
+      "date_of_birth": "2020-01-15",
+      "bitches": 3,
+      "dog_puppies": 2,
+      "parents": {
+        "sire": {
+          "name": "Benillas super star",
+          "titles": ["NORD CH", "SE LCCH"]
+        },
+        "dam": {
+          "name": "Raffa the island queen",
+          "titles": ["NORD CH", "FI LCCH"]
+        }
+      },
+      "puppies": [
+        {
+          "name": "Vento Veloce Aria",
+          "image": "PuppieA.png",
+          "titles": ["SE CH", "FI LCCH"],
+          "owners": "Anna Svensson",
+          "hometown": "Stockholm",
+          "results": ["BIS", "BOB", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Atlas",
+          "image": "puppieB.png",
+          "titles": ["DK CH", "NORD LCCH"],
+          "owners": "Johan Nilsson",
+          "hometown": "Gothenburg",
+          "results": ["BIS", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Aurora",
+          "image": "puppieC.png",
+          "titles": ["FI CH"],
+          "owners": "Lena Karlsson",
+          "hometown": "Helsinki",
+          "results": ["BOB", "CACIB"]
+        },
+        {
+          "name": "Vento Veloce Ares",
+          "image": "puppieD.png",
+          "titles": ["NORD LCCH"],
+          "owners": "Oskar Larsson",
+          "hometown": "Oslo",
+          "results": ["CAC", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Ayla",
+          "image": "puppieE.png",
+          "titles": ["SE CH"],
+          "owners": "Maria Persson",
+          "hometown": "Malmö",
+          "results": ["BOS", "CAC"]
+        }
+      ]
+    },
+    {
+      "litter": "B",
+      "image": "litterB.png",
+      "date_of_birth": "2021-05-20",
+      "bitches": 2,
+      "dog_puppies": 4,
+      "parents": {
+        "sire": {
+          "name": "Windcatchers Rufus",
+          "titles": ["SE CH", "NORD LCCH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Ayla",
+          "titles": ["FI CH", "SE CH", "DK LCCH"]
+        }
+      },
+      "puppies": [
+        {
+          "name": "Vento Veloce Bella",
+          "image": "puppieA.png",
+          "titles": ["SE CH"],
+          "owners": "Eva Andersson",
+          "hometown": "Uppsala",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Bruno",
+          "image": "puppieB.png",
+          "titles": ["DK CH"],
+          "owners": "Erik Johansson",
+          "hometown": "Copenhagen",
+          "results": ["BOB", "CACIB"]
+        },
+        {
+          "name": "Vento Veloce Bianca",
+          "image": "puppieC.png",
+          "titles": ["FI CH"],
+          "owners": "Sofia Jansson",
+          "hometown": "Turku",
+          "results": ["BOS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Boris",
+          "image": "puppieD.png",
+          "titles": ["NORD LCCH"],
+          "owners": "Nina Petersen",
+          "hometown": "Aarhus",
+          "results": ["CAC", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Brianna",
+          "image": "puppieE.png",
+          "titles": ["NORD CH"],
+          "owners": "Fredrik Olsson",
+          "hometown": "Lund",
+          "results": ["BIS", "BOB"]
+        },
+        {
+          "name": "Vento Veloce Ben",
+          "image": "puppieB.png",
+          "titles": ["SE LCCH"],
+          "owners": "Helena Lindberg",
+          "hometown": "Umeå",
+          "results": ["BOS", "CAC"]
+        }
+      ]
+    },
+    {
+      "litter": "C",
+      "image": "litterC.png",
+      "date_of_birth": "2022-02-18",
+      "bitches": 4,
+      "dog_puppies": 3,
+      "parents": {
+        "sire": {
+          "name": "Andalusian speed runner",
+          "titles": ["NORD CH", "DK LCCH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Bianca",
+          "titles": ["FI CH", "SE LCCH"]
+        }
+      },
+      "puppies": [
+        {
+          "name": "Vento Veloce Cassie",
+          "image": "puppieB.png",
+          "titles": ["SE CH"],
+          "owners": "Lisa Pettersson",
+          "hometown": "Stockholm",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Carlo",
+          "image": "puppieC.png",
+          "titles": ["NORD LCCH"],
+          "owners": "Magnus Eriksson",
+          "hometown": "Helsingborg",
+          "results": ["BOB", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Clara",
+          "image": "puppieA.png",
+          "titles": ["FI CH"],
+          "owners": "Emma Nyberg",
+          "hometown": "Oulu",
+          "results": ["BOS", "CACIB"]
+        },
+        {
+          "name": "Vento Veloce Cosmo",
+          "image": "puppieE.png",
+          "titles": ["NORD LCCH"],
+          "owners": "Peter Larsson",
+          "hometown": "Bergen",
+          "results": ["CAC", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Cleo",
+          "image": "puppieD.png",
+          "titles": ["SE CH"],
+          "owners": "Karin Nilsson",
+          "hometown": "Gothenburg",
+          "results": ["BOS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Celine",
+          "image": "puppieB.png",
+          "titles": ["NORD CH"],
+          "owners": "Olle Johansson",
+          "hometown": "Växjö",
+          "results": ["BIS", "BOB"]
+        },
+        {
+          "name": "Vento Veloce Cody",
+          "image": "puppieC.png",
+          "titles": ["FI LCCH"],
+          "owners": "Elin Andersson",
+          "hometown": "Espoo",
+          "results": ["BOS", "CAC"]
+        }
+      ]
+    },
+    {
+      "litter": "D",
+      "image": "litterD.png",
+      "date_of_birth": "2022-11-10",
+      "bitches": 3,
+      "dog_puppies": 2,
+      "parents": {
+        "sire": {
+          "name": "Gamers Super Mario",
+          "titles": ["SE CH", "NORD LCCH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Bianca",
+          "titles": ["FI CH", "DK LCCH"]
+        }
+      },
+      "puppies": [
+        {
+          "name": "Vento Veloce Daisy",
+          "image": "puppieC.png",
+          "titles": ["SE CH"],
+          "owners": "Hanna Berg",
+          "hometown": "Karlstad",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Duke",
+          "image": "puppieB.png",
+          "titles": ["DK CH"],
+          "owners": "Jonas Karlsson",
+          "hometown": "Odense",
+          "results": ["BOB", "CACIB"]
+        },
+        {
+          "name": "Vento Veloce Donna",
+          "image": "puppieA.png",
+          "titles": ["FI CH"],
+          "owners": "Pia Jansson",
+          "hometown": "Tampere",
+          "results": ["BOS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Dexter",
+          "image": "puppieD.png",
+          "titles": ["NORD LCCH"],
+          "owners": "Ingrid Petersen",
+          "hometown": "Stavanger",
+          "results": ["CAC", "RCC"]
+        },
+        {
+          "name": "Vento Veloce Delilah",
+          "image": "puppieE.png",
+          "titles": ["SE CH"],
+          "owners": "Tommy Persson",
+          "hometown": "Lund",
+          "results": ["BOS", "CAC"]
+        }
+      ]
+    },
+    {
+      "litter": "E",
+      "image": "litterE.png",
+      "date_of_birth": "2023-03-25",
+      "bitches": 2,
+      "dog_puppies": 3,
+      "parents": {
+        "sire": {
+          "name": "Northern Mountains Echo",
+          "titles": ["NORD CH", "SE LCCH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Ayla",
+          "titles": ["FI CH", "DK LCCH"]
+        }
+      },
+      "puppies": [
+        {
+          "name": "Vento Veloce Edit",
+          "image": "puppieE.png",
+          "titles": ["SE CH"],
+          "owners": "Stina Lindgren",
+          "hometown": "Linköping",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Elsa",
+          "image": "puppieD.png",
+          "titles": ["SE CH"],
+          "owners": "Stina Lindgren",
+          "hometown": "Linköping",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Eddie",
+          "image": "puppieB.png",
+          "titles": ["SE CH"],
+          "owners": "Stina Lindgren",
+          "hometown": "Linköping",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Elton",
+          "image": "puppieC.png",
+          "titles": ["SE CH"],
+          "owners": "Stina Lindgren",
+          "hometown": "Linköping",
+          "results": ["BIS", "CAC"]
+        },
+        {
+          "name": "Vento Veloce Emiral",
+          "image": "puppieA.png",
+          "titles": ["SE CH"],
+          "owners": "Stina Lindgren",
+          "hometown": "Linköping",
+          "results": ["BIS", "CAC"]
+        }
+      ]
+   }
+  ] 
+} 

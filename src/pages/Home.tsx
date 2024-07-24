@@ -1,5 +1,6 @@
 import kennelfounderImage from '../assets/images/kennelowner.png';
 import Testimonials from '../components/Testimonials';
+import InstagramCarousel from '../components/InstagramCarousel';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       </div>
     </div>
     <Testimonials/>
+    <InstagramCarousel />
     </div>
   );
 }
