@@ -40,7 +40,7 @@
   "litters": [
     {
       "litter": "A",
-      "image": "litterA.png",
+      "image": ["litterA.png", "litterB.png"],
       "date_of_birth": "2020-01-15",
       "bitches": 3,
       "dog_puppies": 2,
@@ -99,7 +99,7 @@
     },
     {
       "litter": "B",
-      "image": "litterB.png",
+      "image": ["litterB.png", "litterA.png", "litterC.png"],
       "date_of_birth": "2021-05-20",
       "bitches": 2,
       "dog_puppies": 4,
@@ -166,7 +166,7 @@
     },
     {
       "litter": "C",
-      "image": "litterC.png",
+      "image": ["litterC.png"],
       "date_of_birth": "2022-02-18",
       "bitches": 4,
       "dog_puppies": 3,
@@ -241,7 +241,7 @@
     },
     {
       "litter": "D",
-      "image": "litterD.png",
+      "image": ["litterD.png", "litterB.png", "litterA.png"],
       "date_of_birth": "2022-11-10",
       "bitches": 3,
       "dog_puppies": 2,
@@ -300,7 +300,7 @@
     },
     {
       "litter": "E",
-      "image": "litterE.png",
+      "image": ["litterE.png", "litterB.png"],
       "date_of_birth": "2023-03-25",
       "bitches": 2,
       "dog_puppies": 3,

@@ -15,7 +15,7 @@ const Home = () => {
         </p>
       </div>
       <div className="image-section md:w-1/2 flex justify-center md:relative md:-mt-20">
-        <img src={kennelfounderImage} alt="Kennel founder" className="md:w-auto max-w-xs" />
+        <img src={kennelfounderImage} alt="Kennel founder" className="md:w-auto max-w-xs object-cover w-[260px] h-[360px]"/>
       </div>
     </div>
     <Testimonials/>

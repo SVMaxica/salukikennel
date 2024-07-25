@@ -15,7 +15,7 @@ export interface Puppy {
 
 export interface Litter {
   litter: string;
-  image: string;
+  image: string[];
   date_of_birth: string;
   bitches: number;
   dog_puppies: number;

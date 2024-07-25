@@ -20,18 +20,18 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
       <img
         src={new URL(`../assets/images/${images[currentImageIndex]}`, import.meta.url).href}
         alt={`Gallery Image ${currentImageIndex + 1}`}
-        className="object-cover rounded-lg"
+        className="object-cover"
         style={{ width: '300px', height: '300px', objectFit: 'cover' }}
       />
       <button
         onClick={handlePrevClick}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-almond text-white p-1 rounded-full"
       >
         &#10094;
       </button>
       <button
         onClick={handleNextClick}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-almond text-white p-1 rounded-full"
       >
         &#10095;
       </button>

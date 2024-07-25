@@ -23,6 +23,7 @@ export default {
         'midnight-blue': '#2C3460', // Dark blue.
         'liberty': '#434D81', // Dark grayish blue.
         'wild-blue-yonder': '#616CAC', // Moderate blue.
+        'wilder-blue': '#565D80', //blue for the footer
         'cool-blue': '#8992C3', // Soft blue.
         'periwinkle': '#DDE5F4', // Very pale blue.
 

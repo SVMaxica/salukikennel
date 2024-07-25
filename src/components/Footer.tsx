@@ -4,10 +4,10 @@ import facebookIcon from '../assets/images/fb.svg';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-midnight-blue text-white p-6">
+    <footer className="bg-wilder-blue text-white p-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
-          <h3 className="text-lg font-bold">Kennel Vento Veloce</h3>
+        <div className="mb-4 md:mb-0 text-gainsboro">
+          <h3 className="text-lg font-bold ">Kennel Vento Veloce</h3>
           <p>1234 Doggo Lane</p>
           <p>12345 Woof City, Country</p>
         </div>
