@@ -38,3 +38,23 @@ export interface Data {
   litters: Litter[];
 }
 
+export interface Dog {
+  name: string;
+  titles: string[];
+  images: string[];
+  birthdate: string;
+  link_to_posts: string;
+  parents: {
+    sire: {
+      name: string;
+      titles: string[];
+    };
+    dam: {
+      name: string;
+      titles: string[];
+    };
+  };
+  health: string[];
+  results: string[];
+  about: string;
+}

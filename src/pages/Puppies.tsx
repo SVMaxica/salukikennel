@@ -67,8 +67,7 @@ const Puppies: React.FC = () => {
                 <img
                   src={new URL(`../assets/images/${selectedLitter.image[0]}`, import.meta.url).href}
                   alt={`${selectedLitter.litter}-litter`}
-                  className="w-full h-full object-cover"
-                  style={{ width: '300px', height: '300px', objectFit: 'cover' }}
+                  className="w-auto h-[300px] object-cover rounded-lg"
                 />
               )}
             </div>
@@ -108,8 +107,7 @@ const Puppies: React.FC = () => {
                 <img
                   src={new URL(`../assets/images/${selectedPuppy.image[0]}`, import.meta.url).href}
                   alt={selectedPuppy.name}
-                  className="w-full h-full object-cover rounded-lg"
-                  style={{ width: '300px', height: '300px', objectFit: 'cover' }}
+                   className="w-auto h-[300px] object-cover rounded-lg"
                 />
               )}
             </div>

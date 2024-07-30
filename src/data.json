@@ -357,5 +357,155 @@
         }
       ]
    }
-  ] 
+  ],
+  "dogs": [
+    {
+      "name": "Vento Veloce Brianna",
+      "titles": ["SE CH", "NORD CH"],
+      "images": ["ourdog2.png", "ourdog3.png"],
+      "birthdate": "2018-04-15",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Desert Wind Falcon",
+          "titles": ["INT CH", "FI CH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Bella",
+          "titles": ["SE CH", "NORD CH"]
+        }
+      },
+      "health": ["Elbows 0/0", "Heart clear"],
+      "results": ["4x BIR", "2x BIS", "8x CAC", "5x CACIB"],
+      "about": "Amina is a very calm dog that loves to cuddle a lot. She also enjoys swimming in our pool."
+    },
+    {
+      "name": "Vento Veloce Cetinja",
+      "titles": ["SE CH", "FI CH"],
+      "images": ["ourdog8.jpeg","ourdog9.jpeg"],
+      "birthdate": "2021-06-10",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Oasis Dream Zane",
+          "titles": ["INT CH", "DK CH"]
+        },
+        "dam": {
+          "name": "Javascripts Reactive Bella",
+          "titles": ["SE CH", "NORD CH"]
+        }
+      },
+      "health": ["Elbows 0/0", "Heart clear"],
+      "results": ["5x BIR", "3x BIS", "9x CAC", "6x CACIB"],
+      "about": "Zara is a playful and curious dog. She loves exploring new places and meeting new friends, both human and canine."
+    },
+    {
+      "name": "Javascripts Reactive Bella",
+      "titles": ["SE CH", "NORD CH"],
+      "images": ["ourdog6.jpeg", "ourdog7.jpeg"],
+      "birthdate": "2017-08-05",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Oasis Dream Zane",
+          "titles": ["INT CH", "DK CH"]
+        },
+        "dam": {
+          "name": "Northern Lights Luna",
+          "titles": ["SE CH", "FI CH"]
+        }
+      },
+      "health": ["Elbows 0/0", "Heart clear"],
+      "results": ["6x BIR", "4x BIS", "10x CAC", "7x CACIB"],
+      "about": "Bella is a gentle and loving dog. She enjoys spending time with the family and is very protective of her loved ones."
+    },
+    {
+      "name": "Vento Veloce Nala",
+      "titles": ["SE CH", "DK CH"],
+      "images": ["ourdog4.JPG", "ourdog5.JPG"],
+      "birthdate": "2019-09-12",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Northern Lights Leo",
+          "titles": ["INT CH", "NORD CH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Aria",
+          "titles": ["SE CH", "FI CH"]
+        }
+      },
+      "health": ["Elbows 0/1", "Heart clear"],
+      "results": ["3x BIR", "1x BIS", "7x CAC", "4x CACIB"],
+      "about": "Nala is an energetic dog who loves running and playing fetch. She is also very affectionate with the family."
+    },
+    {
+      "name": "Vento Veloce Luna",
+      "titles": ["SE CH", "NO CH"],
+      "images": ["ourdog3.png", "ourdog2.png"],
+      "birthdate": "2021-03-22",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Jsons type Script",
+          "titles": ["INT CH", "FI CH"]
+        },
+        "dam": {
+          "name": "Vento Veloce Nala",
+          "titles": ["SE CH", "FI CH"]
+        }
+      },
+      "health": ["Heart clear"],
+      "results": ["2x BIR", "1x BIS", "6x CAC", "3x CACIB"],
+      "about": "Luna is a friendly and sociable dog. She enjoys long walks and playing with her favorite toys."
+    },
+    {
+      "name": "Vento Veloce Kira",
+      "titles": ["SE CH", "NORD CH"],
+      "images": ["ourdog7.jpeg", "ourdog1.png", "ourdog5.JPG"],
+      "birthdate": "2019-11-15",
+      "link_to_posts": "https://ventoveloce.com/posts",
+      "parents": {
+        "sire": {
+          "name": "Desert Wind Frankie",
+          "titles": ["INT CH", "FI CH"]
+        },
+        "dam": {
+          "name": "Saharas stormy Zara",
+          "titles": ["SE CH", "FI CH"]
+        }
+      },
+      "health": ["Elbows 0/0", "Heart clear"],
+      "results": ["4x BIR", "2x BIS", "8x CAC", "5x CACIB"],
+      "about": "Kira is an adventurous dog. She loves outdoor activities and is always eager to explore new trails and paths."
+    }
+  ],
+  "contactInfo": {
+    "phone": "+123 456 7890",
+    "email": "your-email@example.com",
+    "address": "123 Your Address, Your City, Your Country"
+  },
+  "faqs": [
+    {
+      "question": "What is a Saluki?",
+      "answer": "The Saluki is a breed of dog originally bred in the Fertile Crescent. They are sighthounds known for their speed and endurance, and they have a unique combination of elegance and athleticism."
+    },
+    {
+      "question": "What is the temperament of a Saluki?",
+      "answer": "Salukis are known for their gentle and affectionate nature. They are typically reserved with strangers but are loyal and loving with their families. They are also known to be quite independent."
+    },
+    {
+      "question": "How much exercise do Salukis need?",
+      "answer": "Salukis require a significant amount of exercise due to their high energy levels. Regular runs and long walks are essential to keep them happy and healthy."
+    },
+    {
+      "question": "Are Salukis good with children?",
+      "answer": "Salukis can be good with children if they are properly socialized. However, due to their independent nature, they may prefer the company of older children who understand how to interact with dogs respectfully."
+    },
+    {
+      "question": "What kind of grooming do Salukis require?",
+      "answer": "Salukis have a short, smooth coat that requires minimal grooming. Regular brushing to remove dead hair and occasional baths will keep their coat in good condition. Check their ears and nails regularly."
+    }
+  ],
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2077.209151387437!2d18.27432591560426!3d57.63430818108395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465ab71614ba7455%3A0x8f1fd83b8eb22c8e!2sSn%C3%A4ckg%C3%A4rdsv%C3%A4gen%2056%2C%20621%2041%20Visby%2C%20Sweden!5e0!3m2!1sen!2s!4v1656951809050!5m2!1sen!2s"
 } 

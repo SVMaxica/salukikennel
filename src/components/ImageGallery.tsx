@@ -20,8 +20,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
       <img
         src={new URL(`../assets/images/${images[currentImageIndex]}`, import.meta.url).href}
         alt={`Gallery Image ${currentImageIndex + 1}`}
-        className="object-cover"
-        style={{ width: '300px', height: '300px', objectFit: 'cover' }}
+        className="w-auto h-[300px] object-cover rounded-lg"
       />
       <button
         onClick={handlePrevClick}
