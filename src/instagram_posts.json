@@ -7,52 +7,74 @@
     {
       "id": "1",
       "images": ["photo1.jpeg", "photo1_1.jpeg", "photo1_2.jpeg"],
-      "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆 #saluki #hundutställning"
+      "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆",
+      "hashtags": ["Luna", "hundutställning"],
+      "date": "2023-01-15"
     },
     {
       "id": "2",
       "images": ["photo2.JPG", "photo3.jpeg"],
-      "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨 #lurecoursing #hundliv"
+      "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨",
+      "hashtags": ["lurecoursing", "hundliv", "Brianna", "Bella", "Luna", "Nala", "Cetinja", "Kira"],
+      "date": "2023-02-10"
     },
     {
       "id": "3",
       "images": ["photo5.jpeg"],
-      "text": "Äventyr i skogen med hela flocken. 🌲🐾 #hundäventyr #skogspromenad"
+      "text": "Äventyr i skogen med hela flocken. 🌲🐾",
+      "hashtags": ["hundäventyr", "skogspromenad", "Brianna", "Bella", "Luna", "Nala", "Cetinja", "Kira"],
+      "date": "2023-03-05"
     },
     {
       "id": "4",
       "images": ["photo4.jpeg"],
-      "text": "Ny kull med valpar har anlänt! 🐶❤️ #valpar #nyfödd"
+      "text": "Ny kull med valpar har anlänt! 🐶❤️",
+      "hashtags": ["Cetinja", "valpar"],
+      "date": "2023-04-01"
     },
     {
       "id": "5",
       "images": ["photo6.jpeg", "photo7.jpeg"],
-      "text": "Mysiga stunder hemma med våra älskade hundar. 🏡 #hundliv #mys"
+      "text": "Mysiga stunder hemma med våra älskade hundar. 🏡",
+      "hashtags": ["hundliv", "mys", "Brianna", "Kira"],
+      "date": "2023-05-15"
     },
     {
       "id": "6",
       "images": ["photo8.jpeg"],
-      "text": "Träning inför nästa hundutställning. Våra hundar är redo! 💪 #träning #hundutställning"
+      "text": "Träning inför nästa hundutställning. Våra hundar är redo! 💪",
+      "hashtags": ["träning", "hundutställning", "Nala"],
+      "date": "2023-06-20"
     },
     {
       "id": "7",
       "images": ["photo9.jpeg", "photo10.jpeg"],
-      "text": "En dag på stranden med hela gänget. 🏖️ #hundpåstranden #sommar"
+      "text": "En dag på stranden med hela gänget. 🏖️",
+      "hashtags": ["hundpåstranden", "sommar", "Brianna", "Bella", "Luna", "Nala", "Cetinja", "Kira"],
+      "date": "2023-07-10"
     },
     {
       "id": "8",
       "images": ["photo11.jpeg"],
-      "text": "Saluki i full fart på fältet. Frihet och glädje! Salukis måste få bränna ur lite energi då och då, vi har sån tur att vi har ett fält att släppa dom på🐕💨 #saluki #frihet"
+      "text": "Saluki i full fart på fältet. Frihet och glädje! Salukis måste få bränna ur lite energi då och då, vi har sån tur att vi har ett fält att släppa dom på🐕💨",
+      "hashtags": ["saluki", "frihet", "Brianna", "Bella", "Luna", "Nala", "Cetinja", "Kira"],
+      "date": "2023-08-01"
     },
     {
       "id": "9",
       "images": ["photo1.jpeg", "photo1_1.jpeg", "photo1_2.jpeg"],
-      "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆 #saluki #hundutställning"
+      "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆",
+      "hashtags": ["Bella", "hundutställning"],
+      "date": "2023-09-15"
     },
     {
       "id": "10",
       "images": ["photo2.JPG", "photo3.jpeg"],
-      "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨 #lurecoursing #hundliv"
+      "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨",
+      "hashtags": ["lurecoursing", "Brianna", "Bella", "Luna", "Nala", "Cetinja", "Kira"],
+      "date": "2023-10-10"
     }
   ]
 }
+
+

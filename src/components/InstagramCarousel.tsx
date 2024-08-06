@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import SwipeableCarousel from '../components/Carousel';
 import instagramData from '../instagram_posts.json';
@@ -15,20 +15,24 @@ interface Account {
 }
 
 // Dynamisk bildimport funktion
-const importImages = async () => {
-  const context: Record<string, () => Promise<{ default: string }>> = import.meta.glob('../assets/images/*.{png,jpg,jpeg,JPG}');
-  const images: { [key: string]: string } = {};
+const importImages = async (): Promise<Record<string, string>> => {
+  const context = import.meta.glob('../assets/images/*.{png,jpg,jpeg,JPG}');
+  const images: Record<string, string> = {};
+  
   for (const path in context) {
     const key = path.replace('../assets/images/', '');
-    images[key] = (await context[path]()).default;
+    // Hantera rätt typ för context[path]
+    const module = await context[path]();
+    images[key] = (module as { default: string }).default;
   }
+  
   return images;
 };
 
 const InstagramCarousel: React.FC = () => {
   const [posts] = useState<Post[]>(instagramData.posts);
   const [account, setAccount] = useState<Account | null>(null);
-  const [images, setImages] = useState<{ [key: string]: string }>({});
+  const [images, setImages] = useState<Record<string, string>>({});
 
   useEffect(() => {
     const { account } = instagramData;
@@ -60,7 +64,7 @@ const InstagramCarousel: React.FC = () => {
 interface PostCardProps {
   post: Post;
   username: string;
-  images: { [key: string]: string };
+  images: Record<string, string>;
 }
 
 const PostCard: React.FC<PostCardProps> = ({ post, username, images }) => {
@@ -122,5 +126,3 @@ const PostCard: React.FC<PostCardProps> = ({ post, username, images }) => {
 };
 
 export default InstagramCarousel;
-
-
