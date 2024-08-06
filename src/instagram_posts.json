@@ -6,52 +6,52 @@
   "posts": [
     {
       "id": "1",
-      "images": ["/src/assets/images/photo1.jpeg", "/src/assets/images/photo1_1.jpeg", "/src/assets/images/photo1_2.jpeg"],
+      "images": ["photo1.jpeg", "photo1_1.jpeg", "photo1_2.jpeg"],
       "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆 #saluki #hundutställning"
     },
     {
       "id": "2",
-      "images": ["/src/assets/images/photo2.JPG", "/src/assets/images/photo3.jpeg"],
+      "images": ["photo2.JPG", "photo3.jpeg"],
       "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨 #lurecoursing #hundliv"
     },
     {
       "id": "3",
-      "images": ["/src/assets/images/photo5.jpeg"],
+      "images": ["photo5.jpeg"],
       "text": "Äventyr i skogen med hela flocken. 🌲🐾 #hundäventyr #skogspromenad"
     },
     {
       "id": "4",
-      "images": ["/src/assets/images/photo4.jpeg"],
+      "images": ["photo4.jpeg"],
       "text": "Ny kull med valpar har anlänt! 🐶❤️ #valpar #nyfödd"
     },
     {
       "id": "5",
-      "images": ["/src/assets/images/photo6.jpeg", "/src/assets/images/photo7.jpeg"],
+      "images": ["photo6.jpeg", "photo7.jpeg"],
       "text": "Mysiga stunder hemma med våra älskade hundar. 🏡 #hundliv #mys"
     },
     {
       "id": "6",
-      "images": ["/src/assets/images/photo8.jpeg"],
+      "images": ["photo8.jpeg"],
       "text": "Träning inför nästa hundutställning. Våra hundar är redo! 💪 #träning #hundutställning"
     },
     {
       "id": "7",
-      "images": ["/src/assets/images/photo9.jpeg", "/src/assets/images/photo10.jpeg"],
+      "images": ["photo9.jpeg", "photo10.jpeg"],
       "text": "En dag på stranden med hela gänget. 🏖️ #hundpåstranden #sommar"
     },
     {
       "id": "8",
-      "images": ["/src/assets/images/photo11.jpeg"],
+      "images": ["photo11.jpeg"],
       "text": "Saluki i full fart på fältet. Frihet och glädje! Salukis måste få bränna ur lite energi då och då, vi har sån tur att vi har ett fält att släppa dom på🐕💨 #saluki #frihet"
     },
     {
       "id": "9",
-      "images": ["/src/assets/images/photo1.jpeg", "/src/assets/images/photo1_1.jpeg", "/src/assets/images/photo1_2.jpeg"],
+      "images": ["photo1.jpeg", "photo1_1.jpeg", "photo1_2.jpeg"],
       "text": "Vår vackra Saluki vann blev BIS 2:a på hundutställningen! 🏆 #saluki #hundutställning"
     },
     {
       "id": "10",
-      "images": ["/src/assets/images/photo2.JPG", "/src/assets/images/photo3.jpeg"],
+      "images": ["photo2.JPG", "photo3.jpeg"],
       "text": "En fantastisk dag på lurecoursing! Våra hundar älskar att springa. 🐕💨 #lurecoursing #hundliv"
     }
   ]
