@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact-page-wrapper flex flex-col items-center justify-center p-8">
+    <div className="contact-page-wrapper flex flex-col items-center justify-center pt-8">
       <div className="text-center mt-8 mb-8">
         <h1 className="text-4xl text-liberty font-lora pb-2 mb-4">Contact Us</h1>
         <p className="text-base font-inter text-taupe-gray">
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
           ></iframe>
         </div>
       )}
-
+      <div className='bg-almond w-full mt-8'>
       <div className="faqs max-w-lg mx-auto p-4 bg-baby-powder shadow-md rounded-lg mt-8 mb-8">
         <h2 className="text-2xl text-liberty font-lorafont-bold pt-4 mb-4">Frequently Asked Questions</h2>
         {contactContent.faqs.map((faq, index) => (
@@ -74,6 +74,7 @@ const Contact: React.FC = () => {
             <p className="text-gray-700">{faq.answer}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

@@ -115,7 +115,7 @@ const Posts: React.FC = () => {
           id="filter-select"
           value={filter}
           onChange={handleFilterChange}
-          className="mt-1 block w-full max-w-xs pl-3 pr-10 py-2 text-base border border-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md z-50"
+          className="mt-1 block w-full max-w-xs pl-3 pr-10 py-2 text-base border border-gray-400 focus:outline-none focus:ring-gray-400 focus:border-gray-400 sm:text-sm rounded-md z-50"
         >
           {allHashtags.map(tag => (
             <option key={tag} value={tag}>{capitalizeWords(tag)}</option>

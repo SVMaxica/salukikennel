@@ -12,7 +12,7 @@ const SwipeableCarousel: React.FC<SwipeableCarouselProps> = ({ children }) => {
   });
 
   return (
-    <div {...handlers} className="flex overflow-x-auto space-x-4">
+    <div {...handlers} className="flex overflow-x-auto space-x-8">
       {children}
     </div>
   );

@@ -48,11 +48,11 @@ const InstagramCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="p-4 bg-white">
+    <div className=" bg-white">
       <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">Instagram Posts</h2>
       <SwipeableCarousel>
         {posts.map((post) => (
-          <div key={post.id} className="bg-white p-4 w-[320px] flex-shrink-0">
+          <div key={post.id} className="bg-white w-[320px] flex-shrink-0">
             {account && <PostCard post={post} username={account.username} images={images} />}
           </div>
         ))}
