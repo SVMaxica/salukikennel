@@ -1,50 +1,19 @@
-import { useState, useEffect } from 'react';
+
+import React, { useEffect, useState } from 'react';
 import SwipeableCarousel from '../components/Carousel';
-import PostCard from '../components/PostCard'; 
-import instagramData from '../instagram_posts.json';
-
-interface Post {
-  id: string;
-  images: string[];
-  text: string;
-}
-
-interface Account {
-  username: string;
-  description: string;
-}
-
-// Dynamisk bildimport funktion
-const importImages = async (): Promise<Record<string, string>> => {
-  const context = import.meta.glob('../assets/images/*.{png,jpg,jpeg,JPG}');
-  const images: Record<string, string> = {};
-  
-  for (const path in context) {
-    const key = path.replace('../assets/images/', '');
-    // Hantera rätt typ för context[path]
-    const module = await context[path]();
-    images[key] = (module as { default: string }).default;
-  }
-  
-  return images;
-};
+import PostCard from '../components/PostCard';
+import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts'; 
 
 const InstagramCarousel: React.FC = () => {
-  const [posts] = useState<Post[]>(instagramData.posts);
-  const [account, setAccount] = useState<Account | null>(null);
-  const [images, setImages] = useState<Record<string, string>>({});
+  const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
-    const { account } = instagramData;
-    setAccount(account);
-
-    // Ladda bilderna dynamiskt
-    const loadImages = async () => {
-      const importedImages = await importImages();
-      setImages(importedImages);
+    const fetchPosts = async () => {
+      const postsData = await fetchInstagramPosts();
+      setPosts(postsData);
     };
 
-    loadImages();
+    fetchPosts();
   }, []);
 
   return (
@@ -53,7 +22,7 @@ const InstagramCarousel: React.FC = () => {
       <SwipeableCarousel>
         {posts.map((post) => (
           <div key={post.id} className="bg-white w-[320px] flex-shrink-0">
-            {account && <PostCard post={post} username={account.username} images={images} />}
+            <PostCard post={post} username="Roya the Saluki" />
           </div>
         ))}
       </SwipeableCarousel>
