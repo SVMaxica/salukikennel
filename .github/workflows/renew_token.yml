@@ -1,0 +1,13 @@
+name: Renew Instagram Access Token
+
+on:
+  workflow_dispatch:  # Allows manual triggering of the action
+  schedule:
+    - cron: '0 0 */59 * *' # Runs every 59 days
+
+jobs:
+  renew-token:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Function to Renew Token
+        run: curl -X POST https://YOUR_NETLIFY_SITE.netlify.app/.netlify/functions/renewToken
