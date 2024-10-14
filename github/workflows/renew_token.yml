@@ -1,6 +1,7 @@
 name: Renew Instagram Access Token
 
 on:
+workflow_dispatch: # Allows manual triggering of the action
   schedule:
     - cron: '0 0 */59 * *' # Runs every 59 days
 

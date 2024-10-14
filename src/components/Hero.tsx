@@ -10,7 +10,7 @@ const Hero = () => {
       <img src={heroImage} alt="Image of a saluki in the desert" className="absolute top-0 left-0 w-full h-full object-cover" />
       <div className="absolute top-[35%] md:top-[32%]  xl:top-[25%] right-[5%] md:right-[8%] w-[400px] h-[60px] xl:w-[600px] text-right z-30">
       <h1 className="text-5xl md:text-6xl xl:text-8xl font-lora text-baby-powder">Vento Veloce</h1>
-      <h4 className="text-base md:text-xl xl:text-3xl font-inter text-charcoal">Saluki and Whippet breeder</h4>
+      <h4 className="text-base md:text-xl xl:text-3xl font-inter text-charcoal">Sighthound breeder</h4>
       </div>
       {/* <div className="absolute top-[33%] md:top-[30%]  xl:top-[28%] right-[5%] md:right-[8%] w-[400px] h-[60px] xl:w-[600px] text-right z-30">
         <h1 className="text-5xl md:text-6xl xl:text-8xl font-lora text-baby-powder">Vento Veloce</h1>

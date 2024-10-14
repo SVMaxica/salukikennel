@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
           ></iframe>
         </div>
       )}
-      <div className='bg-almond w-full mt-8'>
+      <div className='bg-platinum w-full mt-8'>
       <div className="faqs max-w-lg mx-auto p-4 bg-baby-powder shadow-md rounded-lg mt-8 mb-8">
         <h2 className="text-2xl text-liberty font-lorafont-bold pt-4 mb-4">Frequently Asked Questions</h2>
         {contactContent.faqs.map((faq, index) => (
