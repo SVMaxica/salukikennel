@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
   return (
     <div className="contact-page-wrapper flex flex-col items-center justify-center pt-8">
       <div className="text-center mt-8 mb-8">
-        <h1 className="text-4xl text-liberty font-lora pb-2 mb-4">Contact Us</h1>
+        <h1 className="text-4xl text-liberty font-lora pb-2 mb-4">Contact Us!</h1>
         <p className="text-base font-inter text-taupe-gray">
           We would love to hear from you. Here are the ways you can reach us.
         </p>
