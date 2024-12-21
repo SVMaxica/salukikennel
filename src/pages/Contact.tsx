@@ -16,24 +16,32 @@ const Contact: React.FC = () => {
   return (
     <div className="contact-page-wrapper flex flex-col items-center justify-center pt-8">
       <div className="text-center mt-8 mb-8">
-        <h1 className="text-4xl text-liberty font-lora pb-2 mb-4">Contact Us!</h1>
+        <h1 className="text-4xl text-liberty font-lora pb-2 mb-4">
+          Contact Us!
+        </h1>
         <p className="text-base font-inter text-taupe-gray">
-          We would love to hear from you. Here are the ways you can reach us.
+          We would love to hear from you, here are the ways you can reach us.
         </p>
       </div>
 
       <div className="contact-info max-w-lg mx-auto p-4 bg-white mb-8">
         <div className="flex items-center mb-4">
           <FaPhone className="text-wild-blue-yonder mr-2" />
-          <span className="text-gray-700">{contactContent.contactInfo.phone}</span>
+          <span className="text-gray-700">
+            {contactContent.contactInfo.phone}
+          </span>
         </div>
         <div className="flex items-center mb-4">
           <FaEnvelope className="text-wild-blue-yonder mr-2" />
-          <span className="text-gray-700">{contactContent.contactInfo.email}</span>
+          <span className="text-gray-700">
+            {contactContent.contactInfo.email}
+          </span>
         </div>
         <div className="flex items-center mb-4">
           <FaMapMarkerAlt className="text-wild-blue-yonder mr-2" />
-          <span className="text-gray-700">{contactContent.contactInfo.address}</span>
+          <span className="text-gray-700">
+            {contactContent.contactInfo.address}
+          </span>
         </div>
         <div className="flex space-x-4">
           <button
@@ -65,16 +73,20 @@ const Contact: React.FC = () => {
           ></iframe>
         </div>
       )}
-      <div className='bg-platinum w-full mt-8'>
-      <div className="faqs max-w-lg mx-auto p-4 bg-baby-powder shadow-md rounded-lg mt-8 mb-8">
-        <h2 className="text-2xl text-liberty font-lorafont-bold pt-4 mb-4">Frequently Asked Questions</h2>
-        {contactContent.faqs.map((faq, index) => (
-          <div className="faq-item mb-4" key={index}>
-            <h3 className="text-xl font-lora text-charcoal font-semibold mb-2">{faq.question}</h3>
-            <p className="text-gray-700">{faq.answer}</p>
-          </div>
-        ))}
-      </div>
+      <div className="bg-platinum w-full mt-8">
+        <div className="faqs max-w-lg mx-auto p-4 bg-baby-powder shadow-md rounded-lg mt-8 mb-8">
+          <h2 className="text-2xl text-liberty font-lorafont-bold pt-4 mb-4">
+            Frequently Asked Questions
+          </h2>
+          {contactContent.faqs.map((faq, index) => (
+            <div className="faq-item mb-4" key={index}>
+              <h3 className="text-xl font-lora text-charcoal font-semibold mb-2">
+                {faq.question}
+              </h3>
+              <p className="text-gray-700">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
