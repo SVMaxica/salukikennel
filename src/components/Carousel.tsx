@@ -1,4 +1,3 @@
-
 import { useSwipeable } from 'react-swipeable';
 
 interface SwipeableCarouselProps {

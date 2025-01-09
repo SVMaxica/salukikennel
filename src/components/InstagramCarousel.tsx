@@ -1,28 +1,34 @@
-
 import React, { useEffect, useState } from 'react';
 import SwipeableCarousel from '../components/Carousel';
 import PostCard from '../components/PostCard';
-import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts'; 
+import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts'; // Hämta poster från API eller JSON
 
 const InstagramCarousel: React.FC = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]); // State för poster
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      const postsData = await fetchInstagramPosts();
-      setPosts(postsData);
+    // Funktion för att hämta och sortera poster från API eller JSON
+    const loadPosts = async () => {
+      const fetchedPosts = await fetchInstagramPosts(); // Hämta poster
+      // Sortera poster baserat på datum (senaste först)
+      const sortedPosts = fetchedPosts.sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      );
+      setPosts(sortedPosts); // Spara sorterade poster i state
     };
 
-    fetchPosts();
+    loadPosts(); // Kör vid render
   }, []);
 
   return (
-    <div className="bg-white">
-      <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">Instagram Posts</h2>
+    <div className="bg-white pb-8 pt-12">
+      <h2 className="text-2xl text-liberty font-lora mb-12">Latest Posts</h2>
+
+      {/* Swipebar karusell för poster */}
       <SwipeableCarousel>
         {posts.map((post) => (
           <div key={post.id} className="bg-white w-[320px] flex-shrink-0">
-            <PostCard post={post} username="Roya the Saluki" />
+            <PostCard post={post} username={post.username} />
           </div>
         ))}
       </SwipeableCarousel>
@@ -32,6 +38,40 @@ const InstagramCarousel: React.FC = () => {
 
 export default InstagramCarousel;
 
+// Used when fetching from BAsic display api_________________
+
+// import React, { useEffect, useState } from 'react';
+// import SwipeableCarousel from '../components/Carousel';
+// import PostCard from '../components/PostCard';
+// import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts';
+
+// const InstagramCarousel: React.FC = () => {
+//   const [posts, setPosts] = useState<Post[]>([]);
+
+//   useEffect(() => {
+//     const fetchPosts = async () => {
+//       const postsData = await fetchInstagramPosts();
+//       setPosts(postsData);
+//     };
+
+//     fetchPosts();
+//   }, []);
+
+//   return (
+//     <div className="bg-white">
+//       <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">Instagram Posts</h2>
+//       <SwipeableCarousel>
+//         {posts.map((post) => (
+//           <div key={post.id} className="bg-white w-[320px] flex-shrink-0">
+//             <PostCard post={post} username="Roya the Saluki" />
+//           </div>
+//         ))}
+//       </SwipeableCarousel>
+//     </div>
+//   );
+// };
+
+// export default InstagramCarousel;
 
 //_____When fetching posts from json use the code below comment also comment out Postcard.tsx___________________________________
 
@@ -55,14 +95,14 @@ export default InstagramCarousel;
 // const importImages = async (): Promise<Record<string, string>> => {
 //   const context = import.meta.glob('../assets/images/*.{png,jpg,jpeg,JPG}');
 //   const images: Record<string, string> = {};
-  
+
 //   for (const path in context) {
 //     const key = path.replace('../assets/images/', '');
 //     // Hantera rätt typ för context[path]
 //     const module = await context[path]();
 //     images[key] = (module as { default: string }).default;
 //   }
-  
+
 //   return images;
 // };
 

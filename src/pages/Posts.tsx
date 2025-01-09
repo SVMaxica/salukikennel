@@ -3,69 +3,93 @@ import PostCard from '../components/PostCard';
 import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts';
 
 const Posts: React.FC = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [filterSort, setFilterSort] = useState<string>('latest');
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [availableYears, setAvailableYears] = useState<string[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]); // State för poster
+  const [filterSort, setFilterSort] = useState<string>('latest'); // State för sortering/filtrering
+  const [searchQuery, setSearchQuery] = useState<string>(''); // State för sökfält
+  const [availableYears, setAvailableYears] = useState<string[]>([]); // Unika år för filtrering
 
+  // Nyckelord för filtrering av kategorier
   const showKeywords = [
-    'show', 'shows', 'dogshow', 'dogshows', 'hundutställning', 'utställning', 'utställningen',
+    'show',
+    'shows',
+    'dogshow',
+    'dogshows',
+    'hundutställning',
+    'utställning',
+    'utställningen',
   ];
-
   const lureCoursingKeywords = [
-    'lure coursing', 'lurecoursing', 'coursing', 'race', 'whippet race',
+    'lure coursing',
+    'lurecoursing',
+    'coursing',
+    'race',
+    'whippet race',
   ];
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      const postsData = await fetchInstagramPosts();
+    // Funktion för att hämta poster från API eller JSON
+    const fetchPostsData = async () => {
+      const postsData = await fetchInstagramPosts(); // Hämta poster
       setPosts(postsData);
 
-      // Extract years from posts and create a unique list of years
-      const years = Array.from(new Set(postsData.map(post => new Date(post.date).getFullYear().toString())));
+      // Extrahera unika år från poster
+      const years = Array.from(
+        new Set(
+          postsData.map((post) => new Date(post.date).getFullYear().toString())
+        )
+      );
       setAvailableYears(years);
     };
 
-    fetchPosts();
+    fetchPostsData(); // Kör vid render
   }, []);
 
-  const filteredAndSortedPosts = posts
-    .filter(post => {
-      if (filterSort === 'shows') {
-        return showKeywords.some(keyword => post.text.toLowerCase().includes(keyword));
-      }
-      if (filterSort === 'lure coursing') {
-        return lureCoursingKeywords.some(keyword => post.text.toLowerCase().includes(keyword));
-      }
-      if (availableYears.includes(filterSort)) {
-        return new Date(post.date).getFullYear().toString() === filterSort;
-      }
-      return (
-        post.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.text.toLowerCase().includes(searchQuery.toLowerCase())
+  // Filtrera poster baserat på användarens val
+  const filteredPosts = posts.filter((post) => {
+    if (filterSort === 'shows') {
+      return showKeywords.some((keyword) =>
+        post.text.toLowerCase().includes(keyword)
       );
-    });
+    }
+    if (filterSort === 'lure coursing') {
+      return lureCoursingKeywords.some((keyword) =>
+        post.text.toLowerCase().includes(keyword)
+      );
+    }
+    if (availableYears.includes(filterSort)) {
+      return new Date(post.date).getFullYear().toString() === filterSort;
+    }
+    return (
+      post.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.text.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });
 
-  const sortedPosts = filterSort === 'oldest' 
-    ? filteredAndSortedPosts.reverse() 
-    : filteredAndSortedPosts;
+  // Sortera poster (senaste/äldsta)
+  const sortedPosts =
+    filterSort === 'oldest' ? filteredPosts.reverse() : filteredPosts;
 
   return (
     <div className="bg-white p-4">
-      <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">Instagram Posts</h2>
+      <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">
+        Instagram Posts
+      </h2>
 
+      {/* Filtrerings- och sökfält */}
       <div className="flex justify-evenly mb-4">
         <select
           value={filterSort}
           onChange={(e) => setFilterSort(e.target.value)}
           className="p-2 border rounded z-50"
         >
-          <option value="latest">Latest</option>
-          <option value="oldest">Oldest</option>
+          <option value="oldest">Latest</option>
+          <option value="latest">Oldest</option>
           <option value="shows">Shows</option>
           <option value="lure coursing">Lure Coursing</option>
-          {availableYears.map(year => (
-            <option key={year} value={year}>{year}</option>
+          {availableYears.map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
           ))}
         </select>
 
@@ -78,6 +102,7 @@ const Posts: React.FC = () => {
         />
       </div>
 
+      {/* Rendera poster */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-center">
         {sortedPosts.map((post) => (
           <div key={post.id} className="w-[320px] xl:w-[450px] mx-auto">
@@ -91,7 +116,122 @@ const Posts: React.FC = () => {
 
 export default Posts;
 
+// Used when fetching from BAsic display api_________________
 
+// import React, { useEffect, useState } from 'react';
+// import PostCard from '../components/PostCard';
+// import { fetchInstagramPosts, Post } from '../utils/fetchInstagramPosts';
+
+// const Posts: React.FC = () => {
+//   const [posts, setPosts] = useState<Post[]>([]);
+//   const [filterSort, setFilterSort] = useState<string>('latest');
+//   const [searchQuery, setSearchQuery] = useState<string>('');
+//   const [availableYears, setAvailableYears] = useState<string[]>([]);
+
+//   const showKeywords = [
+//     'show',
+//     'shows',
+//     'dogshow',
+//     'dogshows',
+//     'hundutställning',
+//     'utställning',
+//     'utställningen',
+//   ];
+
+//   const lureCoursingKeywords = [
+//     'lure coursing',
+//     'lurecoursing',
+//     'coursing',
+//     'race',
+//     'whippet race',
+//   ];
+
+//   useEffect(() => {
+//     const fetchPosts = async () => {
+//       const postsData = await fetchInstagramPosts();
+//       setPosts(postsData);
+
+//       // Extract years from posts and create a unique list of years
+//       const years = Array.from(
+//         new Set(
+//           postsData.map((post) => new Date(post.date).getFullYear().toString())
+//         )
+//       );
+//       setAvailableYears(years);
+//     };
+
+//     fetchPosts();
+//   }, []);
+
+//   const filteredAndSortedPosts = posts.filter((post) => {
+//     if (filterSort === 'shows') {
+//       return showKeywords.some((keyword) =>
+//         post.text.toLowerCase().includes(keyword)
+//       );
+//     }
+//     if (filterSort === 'lure coursing') {
+//       return lureCoursingKeywords.some((keyword) =>
+//         post.text.toLowerCase().includes(keyword)
+//       );
+//     }
+//     if (availableYears.includes(filterSort)) {
+//       return new Date(post.date).getFullYear().toString() === filterSort;
+//     }
+//     return (
+//       post.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+//       post.text.toLowerCase().includes(searchQuery.toLowerCase())
+//     );
+//   });
+
+//   const sortedPosts =
+//     filterSort === 'oldest'
+//       ? filteredAndSortedPosts.reverse()
+//       : filteredAndSortedPosts;
+
+//   return (
+//     <div className="bg-white p-4">
+//       <h2 className="text-2xl text-liberty font-lora pt-8 mb-4">
+//         Instagram Posts
+//       </h2>
+
+//       <div className="flex justify-evenly mb-4">
+//         <select
+//           value={filterSort}
+//           onChange={(e) => setFilterSort(e.target.value)}
+//           className="p-2 border rounded z-50"
+//         >
+//           <option value="latest">Latest</option>
+//           <option value="oldest">Oldest</option>
+//           <option value="shows">Shows</option>
+//           <option value="lure coursing">Lure Coursing</option>
+//           {availableYears.map((year) => (
+//             <option key={year} value={year}>
+//               {year}
+//             </option>
+//           ))}
+//         </select>
+
+//         <input
+//           type="text"
+//           value={searchQuery}
+//           onChange={(e) => setSearchQuery(e.target.value)}
+//           placeholder="Search by name or text"
+//           className="p-2 border rounded z-50"
+//         />
+//       </div>
+
+//       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-center">
+//         {sortedPosts.map((post) => (
+//           <div key={post.id} className="w-[320px] xl:w-[450px] mx-auto">
+//             <PostCard post={post} username={post.username} />
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Posts;
 
 //___________Used when fetching posts from json file_____________________
 
@@ -101,7 +241,6 @@ export default Posts;
 // import instagramIcon from '../assets/images/instagram.svg';
 // import facebookIcon from '../assets/images/fb.svg';
 
-
 // interface Post {
 //   id: string;
 //   images: string[];
@@ -109,7 +248,6 @@ export default Posts;
 //   hashtags: string[];
 //   date: string;
 // }
-
 
 // interface Account {
 //   username: string;
@@ -291,7 +429,7 @@ export default Posts;
 //             </span>
 //           )}
 //         </p>
-        
+
 //       </div>
 //     </div>
 //   );
